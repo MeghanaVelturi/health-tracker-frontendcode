@@ -1,14 +1,42 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import SignUp from "../components/SignUp.vue";
+import LoginView from "../views/LoginView.vue";
+import ActivityView from "../views/ActivityView.vue";
+import HydrationView from "../views/HydrationView.vue";
+import NutritionView from "../views/NutritionView.vue";
+import WeightGoalView from "../views/WeightGoalView.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    component: SignUp,
+  },
+  {
+    path: "/login",
+    component: LoginView,
+  },
+  {
+    path: "/signup",
+    component: SignUp,
+  },
+  {
+    path: "/activity",
+    component: ActivityView,
+  },
+  {
+    path: "/hydration",
+    component: HydrationView,
+  },
+  {
+    path: "/nutrition",
+    component: NutritionView,
+  },
+  {
+    path: "/weightgoal",
+    component: WeightGoalView,
   },
   {
     path: "/about",
